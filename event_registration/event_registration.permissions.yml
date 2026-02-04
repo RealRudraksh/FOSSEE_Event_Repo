@@ -1,0 +1,4 @@
+view event registrations:
+  title: 'View Event Registrations'
+  description: 'Access the admin dashboard to view and export registrations.'
+  restrict access: true

@@ -1,0 +1,21 @@
+event_registration.event_add:
+  path: '/admin/config/event-registration/add-event'
+  defaults:
+    _form: '\Drupal\event_registration\Form\EventConfigForm'
+    _title: 'Add New Event'
+  requirements:
+    _permission: 'administer site configuration'
+event_registration.register:
+  path: '/event-registration'
+  defaults:
+    _form: '\Drupal\event_registration\Form\EventRegistrationForm'
+    _title: 'Register for Event'
+  requirements:
+    _permission: 'access content'
+event_registration.admin_list:
+  path: '/admin/event-registration/list'
+  defaults:
+    _form: '\Drupal\event_registration\Form\AdminListingForm'
+    _title: 'Event Registrations List'
+  requirements:
+    _permission: 'view event registrations'
